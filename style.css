@@ -1,0 +1,503 @@
+/* GLOBAL RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #303030;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* side settings (icons placeholder) */
+
+.setting1,
+.setting2 {
+  background-color: #FFFFFF;
+  position: fixed;
+  height: 30px;
+  width: 40px;
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+.setting1 {
+  top: 48%;
+}
+
+.setting2 {
+  top: 52%;
+}
+
+/* ========== HOME & NAV ========== */
+
+.home {
+  background-image: url(img/Home.jpg);
+  color: #ffffff;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.nav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.conth {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.nav-img {
+  float: left;
+}
+
+.nav-img img {
+  width: 177px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav .nav-iteams {
+  float: right;
+}
+
+.nav-iteams ul {
+  list-style: none;
+}
+
+.nav-iteams ul li {
+  float: left;
+  margin: 20px 10px;
+  font-size: 16px;
+}
+
+.nav-iteams ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* home text */
+
+.home2 {
+  margin-top: 250px;
+  text-align: center;
+  font-size: 20px;
+  padding: 0 16px;
+}
+
+.home2 h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 10px 0;
+}
+
+.but {
+  margin-top: 25px;
+}
+
+.ha {
+  background-color: #8E7754;
+  color: #f1f1f1;
+  text-decoration: none;
+  padding: 10px 26px;
+  border-radius: 3px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.ha2 {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #f1f1f1;
+  text-decoration: none;
+  padding: 8px 24px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+/* ========== WHO WE ARE ========== */
+
+.who {
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.whocont {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.imgw {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.whoh {
+  text-align: left;
+  margin-top: 30px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.whoh h2 {
+  margin-bottom: 20px;
+}
+
+.whoh p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.whoh ul {
+  list-style: none;
+}
+
+.whoh ul li {
+  margin-bottom: 10px;
+}
+
+.whoh ul li img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid grey;
+  vertical-align: middle;
+}
+
+.whoh ul li span {
+  margin-left: 15px;
+}
+
+/* ========== LOCATION ========== */
+
+.loc {
+  background-color: #f1f1f1;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.loccont {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.imgl {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.loch {
+  text-align: left;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.loch h2 {
+  margin-bottom: 20px;
+}
+
+.loch p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* ========== BAKING ========== */
+
+.baking {
+  overflow: hidden;
+  margin: 80px 0;
+}
+
+.bak1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.bak1 h2 {
+  margin-bottom: 10px;
+}
+
+.bak1 p {
+  color: #666;
+}
+
+.bak2 {
+  width: 31.7%;
+  float: left;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.baking .container .bak2 p {
+  width: 70%;
+  margin: 10px auto 0;
+  color: #666;
+  line-height: 1.6;
+}
+
+.imgk {
+  width: 85%;
+  margin: 0 auto 10px;
+}
+
+/* ========== CONTACT INFO ========== */
+
+.info {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 80px 0;
+}
+
+.inf {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.inf .infh {
+  text-align: left;
+  width: 73%;
+  margin-left: 10%;
+}
+
+.inf .infh h2 {
+  margin-bottom: 15px;
+}
+
+.inf .infh p {
+  margin-bottom: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.inf .infh ul {
+  list-style: none;
+}
+
+.inf .infh ul li {
+  margin-bottom: 10px;
+}
+
+.inf .infh ul li img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background-color: #8E7754;
+}
+
+.inf .infh ul li span {
+  margin-left: 15px;
+}
+
+.imgin {
+  width: 73%;
+  margin: 0 auto;
+}
+
+/* ========== FOOTER TOP ========== */
+
+.end {
+  background-color: #403D38;
+  overflow: hidden;
+  color: #f1f1f1;
+  padding: 50px 0;
+}
+
+.end2 {
+  overflow: hidden;
+}
+
+.about {
+  float: left;
+  width: 25%;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+.about h2 {
+  margin-bottom: 15px;
+}
+
+.ab p {
+  color: #bebebe;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.about ul {
+  list-style: none;
+}
+
+.about ul li {
+  margin: 10px 0;
+}
+
+.about ul li img {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.about ul li span {
+  color: #bebebe;
+  margin-left: 10px;
+}
+
+.a {
+  height: 1px;
+  width: 80%;
+  background-color: #44423D;
+}
+
+.aback {
+  background-image: url(ioo/contact-details-map.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ========== FOOTER BOTTOM ========== */
+
+.endb {
+  background-color: #353330;
+  text-align: center;
+  padding: 40px 0 30px;
+  color: #f1f1f1;
+}
+
+.imge {
+  margin-bottom: 15px;
+}
+
+.imge img {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.icon {
+  margin-top: 15px;
+}
+
+.b {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-color: #353330;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.imgi {
+  width: 100%;
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 992px) {
+
+  .conth {
+    width: 90%;
+  }
+
+  .nav-img,
+  .nav .nav-iteams {
+    float: none;
+    text-align: center;
+  }
+
+  .nav-iteams ul {
+    display: inline-block;
+  }
+
+  .nav-iteams ul li {
+    float: none;
+    display: inline-block;
+    margin: 10px 8px;
+  }
+
+  .home2 {
+    margin-top: 180px;
+    font-size: 18px;
+  }
+
+  .whocont,
+  .loccont,
+  .inf,
+  .bak2,
+  .about {
+    float: none;
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .whoh,
+  .loch,
+  .inf .infh {
+    width: 90%;
+    margin: 20px auto;
+    text-align: left;
+  }
+
+  .imgw,
+  .imgl,
+  .imgin {
+    width: 90%;
+  }
+
+  .bak2 {
+    width: 100%;
+  }
+
+  .end2 {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .home2 {
+    margin-top: 150px;
+    font-size: 16px;
+  }
+
+  .home2 h1 {
+    font-size: 24px;
+  }
+
+  .but a {
+    display: inline-block;
+    margin: 5px 4px;
+    padding: 8px 18px;
+  }
+}
